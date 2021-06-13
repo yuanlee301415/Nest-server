@@ -1,7 +1,6 @@
 # compiled output
 /dist
 /node_modules
-/Todo
 
 # local env files
 .env.local
@@ -37,3 +36,6 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Todo
+/Todo
