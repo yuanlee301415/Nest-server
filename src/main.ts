@@ -1,5 +1,4 @@
 const path = require('path');
-const pkg = require('../package.json');
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { AppModule } from './app.module';
@@ -18,7 +17,7 @@ async function bootstrap() {
   );
   await app.listen(process.env.PORT);
   console.log(
-    `[${pkg.name}] Nest-server is running on: ${await app.getUrl()}`,
+    `[${process.env.NAME}] is running on: ${await app.getUrl()}`,
     new Date(),
   );
 }
